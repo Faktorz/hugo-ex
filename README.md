@@ -1,3 +1,2 @@
 # hugo-ex
-Example static site for Hugo
-add
+Example static site for [Hugo](https://gohugo.io)
