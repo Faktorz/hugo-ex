@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} &middot; {{ .Site.Title }}{{ end }}</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		{{ with .Site.Params.description }}
+		<meta name="description" content="{{ . }}">
+		{{ end }}
+		{{ with .Site.LanguageCode }}
+		<meta http-equiv="content-language" content="{{ . }}" />
+		{{ end }}
+
+		{{ .Hugo.Generator }}
+
+		<link rel="icon" type="image/png" href="{{ .Site.Params.favicon }}" />
+		<!-- Latest compiled and minified CSS for Bootstrap -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<!-- Latest compiled and minified JavaScript /jQuery for Bootstrap -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+		<!-- Font Awesome CDN -->
+		<script src="https://use.fontawesome.com/2fca6929a8.js"></script>
+
+		<!-- Stylesheet created for Market Theme -->
+		<link rel="stylesheet" href="{{ .Site.BaseURL }}css/style.css" />
+	</head>

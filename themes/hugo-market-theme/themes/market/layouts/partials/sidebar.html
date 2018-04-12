@@ -1,0 +1,14 @@
+<div class="nav-sidebar">
+<h4 id="sidebar-title">Explore the Marketplace</h4>
+  <ul class="side-list list-unstyled">
+    {{ range $taxonomyname, $taxonomy := .Site.Taxonomies }}
+      <li> {{ $taxonomyname | humanize | title }}:
+        <ul class="side-sub-list">
+          {{ range $key, $value := $taxonomy }}
+          <li><a href="/{{ $taxonomyname }}{{ $key | relURL }}"> {{ $key | humanize | title }} </a> </li>
+          {{ end }}
+        </ul>
+      </li>
+    {{ end }}
+  </ul>
+</div>
