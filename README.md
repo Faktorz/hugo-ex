@@ -1,4 +1,4 @@
-hugoBasicExample
+Hugo Basic Example
 ==========
 
 This is an example site for [Hugo](https://gohugo.io/).
